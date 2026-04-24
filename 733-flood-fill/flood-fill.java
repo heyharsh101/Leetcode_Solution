@@ -4,7 +4,8 @@ class Solution {
         int oldcolor = image[sr][sc];
         n = image.length; 
         m = image[0].length;
-        if(oldcolor == color) return image;
+        if(oldcolor == color) 
+            return image;
 
         Fillnew(image, sr, sc, oldcolor, color);
         return image;
