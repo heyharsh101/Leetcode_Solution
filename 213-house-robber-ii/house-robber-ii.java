@@ -12,7 +12,6 @@ class Solution {
         int case2 = Memorization(nums, 1, n-1, dp2);
 
         return Math.max(case1, case2);
-
     }
     public int Memorization(int[] nums, int st, int end, int[] dp){
         if(st > end) return 0;
