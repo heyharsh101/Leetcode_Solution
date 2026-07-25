@@ -13,7 +13,6 @@ class Solution {
             } else {
                 r--;
             }
-
         }
         return new int[]{-1, -1};
     }
