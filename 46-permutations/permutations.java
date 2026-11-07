@@ -2,7 +2,7 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         boolean[] used = new boolean[nums.length];
-
+        
         backtrack(result, new ArrayList<>(), used, nums);
 
         return result;
@@ -14,9 +14,9 @@ class Solution {
         }
 
         for(int i=0; i<nums.length; i++){
-            if(used[i]) continue;
+            if(used[i] ) continue;
 
-            used[i] = true;
+            used[i] =true;
             ans.add(nums[i]);
 
             backtrack(result, ans, used, nums);
