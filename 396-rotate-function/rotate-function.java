@@ -6,7 +6,7 @@ class Solution {
         long f0 = 0;
         for(int i=0; i<n ;i++){
             sum = sum + nums[i];
-            f0 += (long) i * nums[i];
+            f0 += (long) i*nums[i];
         }
 
         long[] dp = new long[n];
@@ -15,7 +15,7 @@ class Solution {
         long max = dp[0];
 
         for(int k = 1; k<n; k++){
-            dp[k] = dp[k - 1] + sum - (long) n* nums[n - k];
+            dp[k] = dp[k-1]+ sum-(long) n* nums[n - k];
             max = Math.max(max, dp[k]);
         }
         return (int) max;
